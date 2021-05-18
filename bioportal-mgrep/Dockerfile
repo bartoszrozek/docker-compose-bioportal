@@ -1,5 +1,5 @@
 FROM debian
-EXPOSE 55555:55555
+EXPOSE 63850:63850
 
 RUN mkdir -p /opt/mgrep/dictionary
 
