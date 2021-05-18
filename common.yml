@@ -11,7 +11,7 @@ services:
     build: ./bioportal-mgrep
     container_name: bioportal-mgrep
     ports: 
-      - "55555:55555"
+      - "63850:63850"
     volumes:
       - ./data/mgrep/:/opt/mgrep/dictionary
   bioportal-solr:
