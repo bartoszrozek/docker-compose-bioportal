@@ -10,11 +10,10 @@ EXPOSE 8983:8983
 MAINTAINER Vincent Emonet, vincent.emonet@gmail.com
 
 # Install packages.
-RUN apt-get update && \
-            apt-get install -y git wget openjdk-8-jre-headless && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get update 
+RUN apt-get install -y git wget openjdk-11-jre-headless
 
-
+RUN rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /opt/solr
 # Install solr
 RUN \
