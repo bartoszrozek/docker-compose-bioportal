@@ -6,8 +6,8 @@ RUN mkdir -p /srv/bioportal/reports
 RUN mkdir -p /srv/bioportal/repository
 
 RUN cd /srv/ncbo && \
-git clone https://github.com/sifrproject/ontologies_api.git && \
-git clone https://github.com/sifrproject/ncbo_cron.git && \
+git clone https://github.com/bartoszrozek/ontologies_api.git && \
+git clone https://github.com/bartoszrozek/ncbo_cron.git && \
 cd /srv/ncbo/ontologies_api/ && git checkout  lirmm && bundle install && \
 cd /srv/ncbo/ncbo_cron/ && git checkout lirmm && bundle install
 
